@@ -1,6 +1,6 @@
 # Investor, Antifragile and a Learning Machine
 
-Shishir Bhat's blog using [Jekyll Atlantic](https://github.com/zerostaticthemes/jekyll-atlantic-theme) by Zerostatic. The original MIT license is included in LICENSE.
+shiihsr's blog using [Jekyll Atlantic](https://github.com/zerostaticthemes/jekyll-atlantic-theme) by Zerostatic. The original MIT license is included in LICENSE.
 
 ## Publishing
 
