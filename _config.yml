@@ -1,17 +1,41 @@
-title: "Investor, Antifragile and a Learning Machine"
-description: "Notes on learning, building, and growing through experience."
-author: "Shishir Bhat"
-url: "https://bhatshishir.github.io"
-baseurl: ""
+title: Investor, Antifragile and a Learning Machine
+description: Notes on investing, learning, and growing through experience.
+author: Shishir Bhat
+url: https://bhatshishir.github.io
+baseurl: ''
 timezone: Asia/Kolkata
-theme: minima
-github_username: bhatshishir
-show_excerpts: true
 permalink: /:year/:month/:day/:title/
+markdown: kramdown
+highlighter: rouge
+logo:
+  logo_desktop_image: assets/images/logo/logo.svg
+  logo_desktop_text: Shishir <strong>Bhat</strong>
+  logo_mobile_image: assets/images/logo/logo-mobile.svg
+  logo_mobile_text: Shishir Bhat
+  logo_desktop_height: 36px
+  logo_desktop_width: 36px
+  logo_mobile_height: 36px
+  logo_mobile_width: 36px
 plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
+- jekyll-feed
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+    authors:
+    - Shishir Bhat
 exclude:
-  - README.md
-  - Gemfile
-  - Gemfile.lock
+- README.md
+- LICENSE
+- Gemfile
+- Gemfile.lock
+- node_modules
+- vendor
+- package.json
+- package-lock.json
+- postcss.config.js
+- tailwind.config.js
+- scripts
+- assets/css/tailwind.css

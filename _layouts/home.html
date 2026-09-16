@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+{% include heading.html heading=page.heading description=page.description %}
+
+<main id="writing" class="py-6" aria-labelledby="writing-title">
+  <h2 id="writing-title" class="text-sm font-semibold uppercase tracking-widest text-gray-600 mb-8">Latest writing</h2>
+  {% for post in site.posts %}
+  <div class="mb-12 post-card">
+    {% include summary.html post=post %}
+  </div>
+  {% else %}
+  <p>New notes are on their way.</p>
+  {% endfor %}
+</main>

@@ -1,46 +1,21 @@
 # Investor, Antifragile and a Learning Machine
 
-Shishir Bhat's Jekyll blog, using the Minima theme.
+Shishir Bhat's blog using [Jekyll Atlantic](https://github.com/zerostaticthemes/jekyll-atlantic-theme) by Zerostatic. The original MIT license is included in LICENSE.
 
-## Publish
+## Publishing
 
-1. In this repository on GitHub, open **Settings → Pages** and choose **GitHub Actions** as the source.
-2. Commit and push these files to `main`.
-3. Check the **Actions** tab for the deployment result.
+Set GitHub repository Settings > Pages > Source to GitHub Actions, then push to main. The workflow builds Tailwind CSS and Jekyll before deploying to https://bhatshishir.github.io.
 
-After a successful deployment, the blog will be available at https://bhatshishir.github.io.
-Every subsequent push to `main` builds and deploys the site automatically. No local Jekyll installation is required.
+## Writing
 
-## Write a post
+Add posts in `_posts/YYYY-MM-DD-title.md` with `layout: post`, `title`, `date`, and optional `tags` in YAML front matter. Optional `thumbnail` displays an image in the homepage card; `image` and `image_alt` add an article cover. Keep assets in `assets/images/` and use the Liquid `relative_url` filter for links.
 
-Create `_posts/YYYY-MM-DD-your-post-title.md` with front matter:
+Future-dated posts require a build after their publication time.
 
-```markdown
----
-layout: post
-title: "Your post title"
-date: 2026-09-16 00:00:00 +0530
-tags: [learning]
----
+## Design
 
-Write your content here using Markdown.
-```
+Edit `index.md` for the headline and introduction, `_config.yml` for site settings, and `_data/authors.yml` for author information. The title appears once on the homepage; the header uses the author's name.
 
-Use the actual publication date in both the filename and front matter. Future-dated posts appear when a build runs after their publication time; the workflow does not schedule builds automatically.
+Edit `assets/css/custom.css` for colors and spacing. `npm ci` followed by `npm run build:css` compiles the stylesheet. With Ruby installed, use `bundle install` and `bundle exec jekyll serve` to preview locally.
 
-## Add images
-
-Upload images to `assets/images/` and reference them in a post:
-
-```liquid
-![Describe the image]({{ '/assets/images/my-photo.jpg' | relative_url }})
-```
-
-## Customize
-
-- Edit `_config.yml` for the title, description, and author.
-- Edit `index.md` for the homepage introduction. Minima's `home` layout lists posts automatically.
-- Edit the sample welcome post or replace it with your own writing.
-- Custom templates can go in `_layouts/` when needed. The theme currently supplies the layouts.
-
-Other themes may require different layout names or additional configuration.
+The demo thumbnail is provided by the Atlantic template (Unsplash).

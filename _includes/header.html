@@ -1,0 +1,6 @@
+<header class="flex items-center justify-between py-6 border-b border-gray-200">
+  {% include logo.html %}
+  <nav aria-label="Main navigation" class="flex text-sm font-medium">
+    {% for item in site.data.menu.main %}<a class="ml-4 hover:text-blue-600" href="{{ item.url | relative_url }}">{{ item.name | escape }}</a>{% endfor %}
+  </nav>
+</header>
