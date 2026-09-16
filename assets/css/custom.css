@@ -1,6 +1,7 @@
 body { background: #f7fafc; color: #172b4d; }
 .page > .container { max-width: 1050px; }
 .heading { letter-spacing: -.035em; }
+.heading, .logo, .logo-mobile { color: #000; }
 .post-card { background: white; border: 1px solid #dce8ef; border-radius: 16px; padding: 24px; box-shadow: 0 6px 24px rgb(23 43 77 / 4%); }
 .prose { max-width: 100%; }
 a:focus-visible, button:focus-visible { outline: 2px solid #2563eb; outline-offset: 4px; }
