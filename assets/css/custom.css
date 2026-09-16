@@ -9,3 +9,11 @@ a:focus-visible, button:focus-visible { outline: 2px solid #2563eb; outline-offs
 .skip-link:focus { top: 12px; }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; } }
 header.border-b, footer.border-t-2 { border-color: #d8c7a7; }
+
+.home-banner {
+  margin-top: 24px;
+  height: clamp(220px, 35vw, 400px);
+  background: url("../images/banner.png") center 55% / cover no-repeat;
+  border-radius: 16px;
+  border: 1px solid #d8c7a7;
+}
