@@ -1,0 +1,17 @@
+title: "Investor, Antifragile and a Learning Machine"
+description: "Notes on learning, building, and growing through experience."
+author: "Shishir Bhat"
+url: "https://bhatshishir.github.io"
+baseurl: ""
+timezone: Asia/Kolkata
+theme: minima
+github_username: bhatshishir
+show_excerpts: true
+permalink: /:year/:month/:day/:title/
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
