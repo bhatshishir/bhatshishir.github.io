@@ -10,6 +10,8 @@ Set GitHub repository Settings > Pages > Source to GitHub Actions, then push to 
 
 Add posts in `_posts/YYYY-MM-DD-title.md` with `layout: post`, `title`, `date`, and optional `tags` in YAML front matter. Optional `thumbnail` displays an image in the homepage card; `image` and `image_alt` add an article cover. Keep assets in `assets/images/` and use the Liquid `relative_url` filter for links.
 
+Alternatively, add numbered source files such as `writings/1.txt`. GitHub Actions runs `scripts/convert_writings.py` before every build, so pushing an edited numbered file automatically updates its published post. Instructions for titles, tags, descriptions, and images are in `writings/README.md`.
+
 Future-dated posts require a build after their publication time.
 
 ## Design

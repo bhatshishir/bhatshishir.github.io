@@ -39,3 +39,4 @@ exclude:
 - tailwind.config.js
 - scripts
 - assets/css/tailwind.css
+- writings
