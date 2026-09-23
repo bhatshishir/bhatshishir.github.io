@@ -118,6 +118,8 @@ def copy_images(number: str) -> tuple[list[Path], Path | None]:
                 shutil.copy2(image, target_dir / image.name)
 
     cover = next((image for image in images if image.stem.lower() == "cover"), None)
+    if cover is None and len(images) == 1:
+        cover = images[0]
     return images, cover
 
 
