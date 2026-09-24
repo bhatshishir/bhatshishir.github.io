@@ -10,6 +10,37 @@ a:focus-visible, button:focus-visible { outline: 2px solid #2563eb; outline-offs
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; } }
 header.border-b, footer.border-t-2 { border-color: #d8c7a7; }
 
+.writing-layout { display: grid; grid-template-columns: minmax(180px, 230px) minmax(0, 1fr); gap: 40px; align-items: start; }
+.writing-feed { min-width: 0; }
+.archive-sidebar { position: sticky; top: 24px; padding: 24px 0; }
+.archive-sidebar h2 { margin: 0 0 12px; font-size: .75rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: #6b5a43; }
+.topic-filter { margin-bottom: 32px; }
+.topic-filter nav { display: flex; flex-wrap: wrap; gap: 7px; }
+.topic-filter a { padding: 4px 9px; border: 1px solid #cbb792; border-radius: 999px; background: #faf3e5; font-size: .75rem; }
+.topic-filter a:hover { background: #ead9ba; color: #000; }
+.archive-timeline { border-left: 2px solid #cbb792; padding-left: 18px; }
+.archive-timeline details { margin-bottom: 14px; }
+.archive-timeline summary { cursor: pointer; font-weight: 700; }
+.archive-month { margin: 12px 0 18px; }
+.archive-month h3 { margin: 0 0 6px; color: #6b5a43; font-size: .8rem; font-weight: 600; }
+.archive-month ul { margin: 0; padding: 0; list-style: none; }
+.archive-month li { margin-bottom: 7px; font-size: .8rem; line-height: 1.35; }
+.archive-month a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.topic-page { padding-bottom: 48px; }
+.topic-section { scroll-margin-top: 20px; padding: 26px 0; border-top: 1px solid #d8c7a7; }
+.topic-section h2 { margin-bottom: 14px; font-size: 1.5rem; }
+.topic-section ul { margin: 0; padding: 0; list-style: none; }
+.topic-section li { display: grid; grid-template-columns: 110px 1fr; gap: 16px; margin-bottom: 10px; }
+.topic-section time, .topic-section p { color: #6b5a43; font-size: .85rem; }
+.topic-section a:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+@media (max-width: 767px) {
+  .writing-layout { display: block; }
+  .archive-sidebar { position: static; padding-bottom: 8px; }
+  .archive-timeline { margin-bottom: 20px; }
+  .topic-section li { grid-template-columns: 1fr; gap: 2px; }
+}
+
 .home-banner {
   margin-top: 24px;
   height: clamp(220px, 35vw, 400px);

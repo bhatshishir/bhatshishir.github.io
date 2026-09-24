@@ -1,0 +1,31 @@
+<aside class="archive-sidebar" aria-labelledby="archive-title">
+  <section class="topic-filter">
+    <h2>Topics</h2>
+    <nav aria-label="Browse by topic">
+      {% for topic in site.data.topics %}
+        <a href="{{ '/tags/' | relative_url }}#{{ topic | slugify }}">{{ topic }}</a>
+      {% endfor %}
+    </nav>
+  </section>
+
+  <section class="archive-timeline">
+    <h2 id="archive-title">Archive</h2>
+    {% assign posts_by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+    {% for year in posts_by_year %}
+      <details {% if forloop.first %}open{% endif %}>
+        <summary>{{ year.name }}</summary>
+        {% assign posts_by_month = year.items | group_by_exp: "post", "post.date | date: '%B'" %}
+        {% for month in posts_by_month %}
+          <div class="archive-month">
+            <h3>{{ month.name }}</h3>
+            <ul>
+              {% for post in month.items %}
+                <li><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endfor %}
+      </details>
+    {% endfor %}
+  </section>
+</aside>

@@ -5,3 +5,6 @@ main:
   - name: Writing
     url: /#writing
     weight: 2
+  - name: Topics
+    url: /tags/
+    weight: 3
