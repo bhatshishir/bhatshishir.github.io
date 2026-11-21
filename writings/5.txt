@@ -1,0 +1,16 @@
+Pipeline
+Tags: Life
+
+It's been exactly a month since I resigned and right now I am serving my notice period until the 30th of this month. I have some updates to be told here. We had discussed in my previous blog regarding how to increase the sample size as the hit rate has reached its saturation level. So, I had a discussion with my cousin who works in the Netherlands and he was thinking of moving into PE. So we had something in common, we wanted to move from our current role to Equities. So we connected and we spoke and he was the one who suggested that I research and write thesis on more companies and then send it to the same people I had previously sent and to more.
+
+I used Claude in research mode and told it to give me all the PMS/CAT 3 AIF in Mumbai, Bangalore and Chennai. It put all the data into a google sheet where I can track them and told it look into all the Pharma concalls from the last 3 quarters and get me the names of the firms mentioned there, the analyst asking the question and their Linkedin profile. Surprisingly, the PMS scrape also had the Principal officer's mail id. Bingo!
+
+I cold mailed all the 54 firms I got in Bangalore and Chennai put together and 4 of them responded to it, 2 from Bangalore and 2 from Chennai. One of the Bangalore firm conveyed they weren't hiring and the other firm held 4 rounds and an assignment to tell me they might hire me as an intern but probably for Ahmedabad location and would let me know by a 20 days. The Chennai firm also held an interview, post which they gave me an assignment to complete within a deadline. I did an assignment on Mankind Pharma and Aurionpro Solutions. 
+
+what I felt was, I jumped into the conclusion that Aurionpro had CG issues, which apparently I couldn't defend and later did I find out was I missed some minute details from the concall which supported that it wasn't any CG issue. So it was a gap in my research. Chennai firm's interview is getting postponed since 2 weeks, the next is held on 24th. Let's see how it goes. 
+
+The Mumbai firm which I had given 2 rounds of interview where I was referred from a friend of mine, had rejected me. Later, when that friend resigned, they called me again and held 2 more rounds of interview. So that went well, but the pay is what I worry. There I might have to take a pay cut. I had hope on the Bangalore one, as I can relocate back to my hometown. Let's see how the Chennai one goes. Another Mumbai firm had offered an internship role for 6 months but the pay was very less and I won't be able to survive. 
+
+Since my last day at my current organization is 30th, I have another 9 days and I need to get into the best one by December end. So the pipeline is robust, the strategies are working and now it's left to the skills and what the firm wants from me and what I want from the firm.
+
+Wish me luck!!!
